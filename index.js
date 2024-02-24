@@ -19,7 +19,7 @@ connectDB();
 
 
 
-app.use('/',router);
+app.use('/home',router);
 
 
 
