@@ -17,7 +17,15 @@ app.use(cors());
 connectDB();
 
 
+
+
 app.use('/',router);
+
+app.get('/', (req,res)=>{
+
+    res.send("Hello World!");
+
+});
 
 
 const PORT = process.env.PORT || 9000 ; 
