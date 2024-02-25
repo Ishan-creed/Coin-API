@@ -29,14 +29,16 @@ This API provides endpoints to fetch information about cryptocurrencies, predict
 - **Description:** Fetch companies owning the following coin.
 - **Query Parameters:** 
   - `currencyId`: ID of the currency for which to fetch companies.
+    
 
 ## Running the API
 
 1. Install Node.js and npm.
 2. Clone this repository.
 3. Install dependencies using `npm install`.
-4. Start the server using `npm start`.
-5. You can now access the API endpoints using a tool like Postman or by sending requests from your frontend application.
+4. Add a .env file in the directory and provide MONGO_URI 
+5. Start the server using `npm start`.
+6. You can now access the API endpoints using a tool like Postman or by sending requests from your frontend application.
 
 ## Testing the Endpoints
 
