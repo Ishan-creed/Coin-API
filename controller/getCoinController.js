@@ -40,7 +40,7 @@ export const pricePredictor = async (req, res) => {
 
          // body -  parameters
 
-        const { fromCurrencyId, date, toCurrencyId } = req.body;
+        const { fromCurrencyId, date, toCurrencyId } = req.query;
 
         const response = await axios.get(`${API_BASE_URL}/coins/${fromCurrencyId}/history?date=${date}&localization=true`);
 
@@ -68,7 +68,7 @@ export const fetchCompanies = async (req, res) => {
 
          // body -  parameter
 
-        const { currencyId } = req.body;
+        const { currencyId } = req.query;
 
         const response  = await axios.get(`${API_BASE_URL}/companies/public_treasury/${currencyId}`);
 
