@@ -4,7 +4,7 @@ import connectDB from './database/connectDB.js';
 import mongoose from 'mongoose';
 import router from './router/router.js';
 import dotenv from 'dotenv';
-// import { fetchCoins } from './controller/getCoinController.js';
+import { fetchCoins } from './controller/getCoinController.js';
 dotenv.config();
 
 
@@ -19,7 +19,7 @@ connectDB();
 
 
 
-app.use('/home',router);
+app.use('/',router);
 
 
 
@@ -35,4 +35,4 @@ app.listen(PORT, ()=>{
 
 // updating the coins in db by fetching the coins every 1 hour. 
 
-// setInterval(fetchCoins, 60 * 60 * 1000);
+setInterval(fetchCoins, 60 * 60 * 1000);
