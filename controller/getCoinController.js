@@ -1,5 +1,5 @@
 import axios from "axios";
-import coinModel from "../model/CoinModel";
+import coinModel from "../model/CoinModel.js";
 import { API_BASE_URL } from "../apiConfig.js";
 
 export const fetchCoins = async (req, res) => {
