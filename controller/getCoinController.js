@@ -27,6 +27,9 @@ export const fetchCoins = async (req, res) => {
 
         console.log({ message: "Coins fetched and stored successfully" });
 
+        res.send({ message: `Coins fetched and stored successfully are following : ${JSON.stringify(response.data)}` });
+
+
     } catch (error) {
         console.error("Error fetching coins:", error);
 
